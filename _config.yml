@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Joshua Cammock Portfolio
+title: Joshua Cammock
 email: joshua.cammock@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   A site to keep up to date with my projects.
@@ -26,9 +26,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 domain: "jcammock.github.io"
 url: "https://jcammock.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  JCammock
+show_downloads: false
+
+header_pages:
+  - index.md
+  - pages/about.md
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: minima
 plugins:
   - jekyll-feed
 

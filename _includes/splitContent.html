@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/assets/splitContent.css">
+{%- if include.left and include.right -%}
+<div class="row">
+    <div class="column">
+        {{ include.left | markdownify }}
+    </div>
+    <div class="column">
+        {{ include.right | markdownify }}
+    </div>
+</div>
+{%- endif -%}
